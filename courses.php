@@ -51,18 +51,18 @@
     </a>
   </div>
 </nav>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1>
+      <h1 class="logo me-auto"><a href="index.php"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.php" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a class="active" href="courses.php">Academics</a></li>
           <li><a href="admission.php">Admission</a></li>
           <li><a href="events.php">Events</a></li>
-          <!-- <li><a href="pricing.html">Pricing</a></li> -->
+          <!-- <li><a href="pricing.php">Pricing</a></li> -->
 
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -115,7 +115,7 @@
                   <!-- <p class="price">$169</p> -->
                 </div>
 
-                <!-- <h3><a href="course-details.html">Website Design</a></h3> -->
+                <!-- <h3><a href="course-details.php">Website Design</a></h3> -->
                 <p>Through hands-on experimentation and observation, our students develop the skills and knowledge needed to understand the world around them. They learn to think critically, analyze data, and make informed decisions based on evidence.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -141,7 +141,7 @@
                   <!-- <p class="price">$250</p> -->
                 </div>
 
-                <!-- <h3><a href="course-details.html">Search Engine Optimization</a></h3> -->
+                <!-- <h3><a href="course-details.php">Search Engine Optimization</a></h3> -->
                 <p>Our team of expert educators includes scholars and university toppers who not only make mathematics interesting but also fun to learn. They bring a wealth of knowledge and experience to the classroom and are passionate about helping our students develop a deep understanding of mathematical concepts.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -167,7 +167,7 @@
                   <!-- <p class="price">$180</p> -->
                 </div>
 
-                <!-- <h3><a href="course-details.html">Copywriting</a></h3> -->
+                <!-- <h3><a href="course-details.php">Copywriting</a></h3> -->
                 <p>We believe that the arts are an essential part of a well-rounded education and offer our students the opportunity to explore their passions and talents in a supportive and inspiring environment.</p>
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">

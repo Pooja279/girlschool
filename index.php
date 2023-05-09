@@ -54,18 +54,18 @@ include "connection.php";
     </a>
   </div>
 </nav>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1>
+      <h1 class="logo me-auto"><a href="index.php"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.php" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
+          <li><a class="active" href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="courses.php">Acedemics</a></li>
           <li><a href="admission.php">Admission</a></li>
           <li><a href="events.php">Events</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="pricing.php">Pricing</a></li>
 
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -307,7 +307,7 @@ include "connection.php";
                   <!-- <p class="price">$169</p> -->
                 </div>
 
-                <!-- <h3><a href="course-details.html">Website Design</a></h3> -->
+                <!-- <h3><a href="course-details.php">Website Design</a></h3> -->
                 <!-- <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p> -->
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -334,7 +334,7 @@ include "connection.php";
                   <!-- <p class="price">$250</p> -->
                 </div>
 
-                <!-- <h3><a href="course-details.html">Search Engine Optimization</a></h3> -->
+                <!-- <h3><a href="course-details.php">Search Engine Optimization</a></h3> -->
                 <!-- <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p> -->
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -360,7 +360,7 @@ include "connection.php";
                   <!-- <p class="price">$180</p> -->
                 </div>
 
-                <!-- <h3><a href="course-details.html">Copywriting</a></h3> -->
+                <!-- <h3><a href="course-details.php">Copywriting</a></h3> -->
                 <!-- <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p> -->
                 <!-- <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">

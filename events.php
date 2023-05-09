@@ -8,6 +8,7 @@
   <title>ggicballia</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
   <!-- Favicons -->
   <link href="assets/img/upboard.png" rel="icon">
@@ -35,6 +36,21 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<script>
+  $(function() {
+  var selectedClass = "";
+  $(".filter").click(function(){
+    console.log("Call hre======>>>");
+    selectedClass = $(this).attr("data-rel");
+    $("#gallery").fadeTo(100, 0.1);
+    $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('animation');
+      $("#gallery").fadeTo(300, 1);
+    }, 300);
+  });
+});
+</script>
 </head>
 
 <body>
@@ -51,18 +67,18 @@
     </a>
   </div>
 </nav>
-      <h1 class="logo me-auto"><a href="index.html"></a></h1>
+      <h1 class="logo me-auto"><a href="index.php"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.php" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a  href="courses.php">Academics</a></li>
           <li><a href="admission.php">Admission</a></li>
           <li><a class="active" href="events.php">Events</a></li>
-          <!-- <li><a href="pricing.html">Pricing</a></li> -->
+          <!-- <li><a href="pricing.php">Pricing</a></li> -->
 
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -101,11 +117,100 @@
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
-      <div class="container" data-aos="fade-up">
+    <!-- Grid row -->
+<div class="row">
+
+<!-- Grid column -->
+<div class="col-md-12 d-flex justify-content-center mb-5">
+
+  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Amrit Mahotsav</button>
+  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Yoga Day</button>
+  <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="3">Republic Day</button>
+
 
 </div>
-    </section><!-- End Events Section -->
+<!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="gallery" id="gallery">
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 3">
+  <img class="img-fluid" src="images/republicday/4.jpg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 2">
+  <img class="img-fluid" src="images/YogaDay/1.jpeg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 1">
+  <img class="img-fluid" src="images/AzadiKa AmritMahotsav/18.jpeg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 1">
+  <img class="img-fluid" src="images/AzadiKa AmritMahotsav/2.jpeg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 2">
+  <img class="img-fluid" src="images/YogaDay/7.jpeg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 3">
+  <img class="img-fluid" src="images/republicday/5.jpg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 3">
+  <img class="img-fluid" src="images/republicday/1.jpg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 2">
+  <img class="img-fluid" src="images/YogaDay/12.jpeg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 1">
+  <img class="img-fluid" src="images/AzadiKa AmritMahotsav/17.jpeg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 3">
+  <img class="img-fluid" src="images/republicday/12.jpg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="mb-3 pics animation all 3">
+  <img class="img-fluid" src="images/republicday/4.jpg" alt="Card image cap">
+</div>
+<!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+    <!-- <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+    </div>
+    </section>End Events Section -->
 
   </main><!-- End #main -->
 
