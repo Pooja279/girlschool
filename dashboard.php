@@ -9,9 +9,9 @@
     <meta name="description" content="Enzo admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Enzo admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
-    <title>Enzo - Premium Admin Template</title>
+    <link rel="icon" href="assets/img/upboard.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/upboard.png" type="image/x-icon">
+    <title>ggicballia</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -69,7 +69,7 @@
             </div>
           </form>
           <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="assets/images/logo/login.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="dashboard.php"><img class="img-fluid" src="assets/images/logo/login.png" alt=""></a></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
           </div>
           <div class="left-header col horizontal-wrapper ps-0">
@@ -90,7 +90,7 @@
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
-                  <li><a href="user-profile.html"><i data-feather="user"></i><span>Log out </span></a></li>
+                  <li><a href="index.php"><i data-feather="user"></i><span>Log out </span></a></li>
                 
                 </ul>
               </li>
@@ -113,16 +113,16 @@
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper">
           <div>
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="assets/img/upboard.png" alt="" style="max-width: 27%;"></a>
+            <div class="logo-wrapper"><a href="dashboard.php"><img class="img-fluid for-light" src="assets/img/upboard.png" alt="" style="max-width: 27%;"></a>
               <div class="back-btn"><i class="fa fa-angle-left"></i></div>
               <div class="toggle-sidebar"><i class="fa fa-cog status_toggle middle sidebar-toggle"> </i></div>
             </div>
-            <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid" src="assets/img/upboard.png" alt="" style="max-width: 27%;"></a>GGICBALLIA</div>
+            <div class="logo-icon-wrapper"><a href="dashboard.php"><img class="img-fluid" src="assets/img/upboard.png" alt="" style="max-width: 27%;"></a>GGICBALLIA</div>
             <nav class="sidebar-main">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
               <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
-                  <li class="back-btn"><a href="index.html"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a>
+                  <li class="back-btn"><a href="dashboard.php"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a>
                     <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                   </li>
                   <li class="sidebar-main-title">          
@@ -607,7 +607,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td> <a href="user-profile.html"> <span>Ossim keter</span></a>
+                            <td> <a href="index.php"> <span>Ossim keter</span></a>
                               <p>2023</p>
                             </td>
                             <td>16 Aug</td>
@@ -617,7 +617,7 @@
                             <td>Success</td>
                           </tr>
                           <tr>
-                            <td> <a href="user-profile.html"><span>Venter loren</span></a>
+                            <td> <a href="index.php"><span>Venter loren</span></a>
                               <p>2021</p>
                             </td>
                             <td>21 Sep</td>
@@ -627,7 +627,7 @@
                             <td>Success</td>
                           </tr>
                           <tr>
-                            <td> <a href="user-profile.html"><span>Fran Loan</span></a>
+                            <td> <a href="index.php"><span>Fran Loan</span></a>
                               <p>2023</p>
                             </td>
                             <td>06 Mar</td>
@@ -734,6 +734,10 @@
     <script src="assets/js/typeahead-search/typeahead-custom.js"></script>
     <script src="assets/js/vector-map/map-vector.js"></script>
     <script src="assets/js/dashboard/dashboard_2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="assets/js/script.js"></script>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from brandio.io/envato/iofrm/html/login4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:36:29 GMT -->
+<!-- Mirrored from brandio.io/envato/ggicballia/html/login4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:36:29 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iofrm</title>
+    <title>ggicballia</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/iofrm-style.css">
@@ -21,25 +21,35 @@
         $username = mysqli_real_escape_string($conn, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($conn, $password);
+        $type = stripslashes($_REQUEST['admin']);
+        if($type == 'teacher') {
+            $table = "teachers";
+        } 
+        else {
+            $table = "students";
+        }
+        echo $table."table========>>";
         // Check user is exist in the database
-        $query    = "SELECT * FROM `users` WHERE username='$username'
+        $query    = "SELECT * FROM $table WHERE name='$username'
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($conn, $query) or die(mysql_error());
         $rows = mysqli_num_rows($result);
-        if ($rows == 1) {
+        if ($result && $rows == 1) {
             $_SESSION['username'] = $username;
             // Redirect to user dashboard page
             header("Location: dashboard.php");
         } else {
             
             echo "Incorrect Username/Password .";
+            
 
         }
     } else {
-?>
+        
+?>  
     <div class="form-body">
         <div class="website-logo">
-            <a href="index.html">
+            <a href="dashboard.php">
                 <div class="logo">
                     <img class="logo-size" src="assets/img/logo-light.svg" alt="">
                 </div>
@@ -56,11 +66,15 @@
                 <div class="form-content">
                     <div class="form-items">
                         <h3>Admin Login</h3>
+                        <?php $admintype = $_GET['admin']; ?>
+                      
+
                         <!-- <p>Access to the most powerfull tool in the entire design and web industry.</p> -->
                         <div class="page-links">
-                            <a href="login.php" class="active">Login</a><a href="register.php">Register</a>
+                            <a href="login.php" class="active">Login</a><a href="register.php?admin=<?php echo $admintype;?>">Register</a>
                         </div>
                         <form action="" method="post">
+                            <input type="text"  name="admin" value="<?php echo $admintype; ?>" hidden />
                             <input class="form-control" type="text" name="username" placeholder="E-mail Address" required>
                             <input class="form-control" type="password" name="password" placeholder="Password" required>
                             <div class="form-button">
@@ -84,5 +98,5 @@
 <script src="assets/js/main.js"></script>
 </body>
 
-<!-- Mirrored from brandio.io/envato/iofrm/html/login4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:36:31 GMT -->
+<!-- Mirrored from brandio.io/envato/ggicballia/html/login4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:36:31 GMT -->
 </html>

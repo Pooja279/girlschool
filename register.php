@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from brandio.io/envato/iofrm/html/register4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:37:01 GMT -->
+<!-- Mirrored from brandio.io/envato/ggicballia/html/register4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:37:01 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iofrm</title>
+    <title>ggicballia</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/iofrm-style.css">
@@ -21,10 +21,14 @@
 </head>
 <body>
     <?php
+        
         require('connection.php');
+       
         // When form submitted, insert values into the database.
         if (isset($_REQUEST['username'])) {
             // removes backslashes
+            $type = stripslashes($_REQUEST['admin']);
+            
             $username = stripslashes($_REQUEST['username']);
             //escapes special characters in a string
             $username = mysqli_real_escape_string($conn, $username);
@@ -33,14 +37,18 @@
             $password = stripslashes($_REQUEST['password']);
             $password = mysqli_real_escape_string($conn, $password);
             $create_datetime = date("Y-m-d H:i:s");
-            $query    = "INSERT into `users` (username, password, email, create_datetime)
-                        VALUES ('$username', '" . md5($password) . "', '$email', '$create_datetime')";
+            if($type == 'teacher') {
+                $table = "teachers";
+            } 
+            else {
+                $table = "students";
+            }
+            $query    = "INSERT into $table (name, password, email)
+                        VALUES ('$username', '" . md5($password) . "', '$email')";
             $result   = mysqli_query($conn, $query);
+            $location = 'login.php?admin='.$type;
             if ($result) {
-                echo "<div class='form'>
-                    <h3>You are registered successfully.</h3><br/>
-                    <p class='link'>Click here to <a href='login.php'>Login</a></p>
-                    </div>";
+               header('Location:'.$location);
             } else {
                 echo "<div class='form'>
                     <h3>Required fields are missing.</h3><br/>
@@ -51,7 +59,7 @@
     ?>
     <div class="form-body">
         <div class="website-logo">
-            <a href="index.html">
+            <a href="dashboard.php">
                 <div class="logo">
                     <img class="logo-size" src="assets/img/logo-light.svg" alt="">
                 </div>
@@ -67,12 +75,16 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
+                    
+
                         <h3>Admin Register</h3>
+                        <?php $admintype = $_GET['admin']; ?>
                         <!-- <p>Access to the most powerfull tool in the entire design and web industry.</p> -->
                         <div class="page-links">
-                            <a href="login.php">Login</a><a href="" class="active">Register</a>
+                            <a href="login.php?admin=<?php echo $admintype;?>">Login</a><a href="" class="active">Register</a>
                         </div>
                         <form>
+                            <input type="text"  name="admin" value="<?php echo $admintype; ?>" hidden />
                             <input class="form-control" type="text" name="username" placeholder="Full Name" required>
                             <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
                             <input class="form-control" type="password" name="password" placeholder="Password" required>
@@ -97,5 +109,5 @@
 <script src="assets/js/main.js"></script>
 </body>
 
-<!-- Mirrored from brandio.io/envato/iofrm/html/register4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:37:01 GMT -->
+<!-- Mirrored from brandio.io/envato/ggicballia/html/register4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 22:37:01 GMT -->
 </html>
