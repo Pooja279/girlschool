@@ -30,6 +30,8 @@
             $type = stripslashes($_REQUEST['admin']);
             
             $username = stripslashes($_REQUEST['username']);
+            $age = stripslashes($_REQUEST['age']);
+
             //escapes special characters in a string
             $username = mysqli_real_escape_string($conn, $username);
             $email    = stripslashes($_REQUEST['email']);
@@ -43,8 +45,8 @@
             else {
                 $table = "students";
             }
-            $query    = "INSERT into $table (name, password, email)
-                        VALUES ('$username', '" . md5($password) . "', '$email')";
+            $query    = "INSERT into $table (name, password, age, email)
+                        VALUES ('$username', '" . md5($password) . "','$age', '$email')";
             $result   = mysqli_query($conn, $query);
             $location = 'login.php?admin='.$type;
             if ($result) {
@@ -87,7 +89,9 @@
                             <input type="text"  name="admin" value="<?php echo $admintype; ?>" hidden />
                             <input class="form-control" type="text" name="username" placeholder="Full Name" required>
                             <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                            <input class="form-control" type="number" name="age" placeholder="Age" required>
                             <input class="form-control" type="password" name="password" placeholder="Password" required>
+
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">Register</button>
                             </div>

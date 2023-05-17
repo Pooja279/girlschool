@@ -71,7 +71,7 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown d-none d-lg-block">
+          <!-- <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
               <a class="dropdown-item py-3" >
@@ -103,7 +103,7 @@
                 </div>
               </a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item d-none d-lg-block">
             <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
               <span class="input-group-addon input-group-prepend border-right">
@@ -196,6 +196,9 @@
               </a>
             </div>
           </li>
+          <li class="nav-item dropdown">
+            <a href="index.php" style="text-decoration:none">Logout</a>
+          </li>
           <!-- <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
@@ -216,13 +219,14 @@
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
         </button>
+
       </div>
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_settings-panel.html -->
       <div class="theme-setting-wrapper">
-        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <!-- <div id="settings-trigger"><i class="ti-settings"></i></div> -->
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
@@ -416,7 +420,7 @@
             </div>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="teacher.php">Teacher table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="teacher.php">Teacher List</a></li>
               </ul>
             </div>
           </li>

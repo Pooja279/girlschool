@@ -28,8 +28,8 @@
 <?php
   include("connection.php");
   $db= $conn;
-  $tableName="teacher";
-  $columns= ['ID', 'name','age','address','subject'];
+  $tableName="teachers";
+  $columns= ['ID', 'name','age','subject'];
   $fetchData = fetch_data($db, $tableName, $columns);
   function fetch_data($db, $tableName, $columns){
   if(empty($db)){
@@ -82,7 +82,7 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown d-none d-lg-block">
+          <!-- <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
               <a class="dropdown-item py-3" >
@@ -114,7 +114,7 @@
                 </div>
               </a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item d-none d-lg-block">
             <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
               <span class="input-group-addon input-group-prepend border-right">
@@ -233,7 +233,7 @@
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_settings-panel.html -->
       <div class="theme-setting-wrapper">
-        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <!-- <div id="settings-trigger"><i class="ti-settings"></i></div> -->
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
@@ -454,9 +454,7 @@
                           <th>
                             Age
                           </th>
-                          <th>
-                            Address
-                          </th>
+                         
                           <th>
                             Subject
                           </th>
@@ -481,9 +479,7 @@
                             <?php echo $data['age']??''; ?>
                             
                           </td>
-                          <td>
-                          <?php echo $data['address']??''; ?>
-                          </td>
+                         
                           <td>
                             <?php echo $data['subject']??''; ?>
                           </td>

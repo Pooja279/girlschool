@@ -28,7 +28,7 @@
         else {
             $table = "students";
         }
-        echo $table."table========>>";
+        // echo $table."table========>>";
         // Check user is exist in the database
         $query    = "SELECT * FROM $table WHERE name='$username'
                      AND password='" . md5($password) . "'";
