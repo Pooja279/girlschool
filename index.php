@@ -66,9 +66,10 @@ include "connection.php";
           <li><a href="admission.php">Admission</a></li>
           <li><a href="events.php">Events</a></li>
 
-          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact.php">Contact</a></li>&nbsp;&nbsp;&nbsp;
-          <li><a href="login.php"><button class="btn btn-primary">Admin</button></a></li>
+          <li><a href="login.php?admin=student"><button class="btn btn-primary" style="background-color:#5fcf80; border:none">Student Admin</button></a></li>
+          <li><a href="login.php?admin=teacher"><button class="btn btn-primary" style="background-color:#5fcf80; border:none">Teacher Admin</button></a></li>
+
 
         
         </ul>

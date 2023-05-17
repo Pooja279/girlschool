@@ -40,7 +40,7 @@
   $(function() {
   var selectedClass = "";
   $(".filter").click(function(){
-    console.log("Call hre======>>>");
+    // console.log("Call hre======>>>");
     selectedClass = $(this).attr("data-rel");
     $("#gallery").fadeTo(100, 0.1);
     $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');

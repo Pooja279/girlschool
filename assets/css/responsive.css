@@ -829,17 +829,17 @@
   .page-wrapper.compact-wrapper .page-header .header-wrapper .toggle-nav {
     display: none;
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+  .page-body-wrapper div.sidebar-wrapper {
     top: 0;
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper.close_icon:hover {
+  .page-body-wrapper div.sidebar-wrapper.close_icon:hover {
     -webkit-transform: translate(-285px);
             transform: translate(-285px);
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper {
+  .page-body-wrapper div.sidebar-wrapper .logo-wrapper {
     padding: 17px 30px;
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper .back-btn {
+  .page-body-wrapper div.sidebar-wrapper .logo-wrapper .back-btn {
     position: absolute;
     top: 22px;
     right: 30px;
@@ -858,24 +858,24 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper .back-btn i {
+   .page-body-wrapper div.sidebar-wrapper .logo-wrapper .back-btn i {
     font-size: 18px;
     color: #fff;
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper .toggle-sidebar {
+   .page-body-wrapper div.sidebar-wrapper .logo-wrapper .toggle-sidebar {
     display: none;
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links {
+   .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links {
     height: calc(100vh - 95px);
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper.close_icon {
+  .page-body-wrapper div.sidebar-wrapper.close_icon {
     -webkit-transform: translate(-285px);
             transform: translate(-285px);
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper.close_icon .sidebar-main .sidebar-links {
+   .page-body-wrapper div.sidebar-wrapper.close_icon .sidebar-main .sidebar-links {
     height: unset;
   }
-  .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
+   .page-body-wrapper .page-body {
     margin-top: 100px;
     padding: 0 15px;
   }
