@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from admin.pixelstrap.com/enzo/template/datatable-basic-init.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 May 2023 21:04:46 GMT -->
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enzo admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Enzo admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="pixelstrap">
-    <link rel="icon" href="assets/img/upboard.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/img/upboard.png" type="image/x-icon">
-    <title>ggicballia</title>
-    <!-- Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/font-awesome.css">
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/icofont.css">
-    <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css">
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/flag-icon.css">
-    <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css">
-    <!-- Plugins css start-->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/datatables.css">
-    <!-- Plugins css Ends-->
-    <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
-    <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
-    <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen">
-    <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-  </head>
-  <body>
-  <?php
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ggicballia </title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link href="assets/img/upboard.png" rel="icon">
+
+</head>
+<body>
+<?php
 include("connection.php");
 $db= $conn;
 $tableName="students";
@@ -71,215 +56,483 @@ if($result== true){
 return $msg;
 }
 ?>
-    <!-- tap on top starts-->
-    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-    <!-- tap on tap ends-->
-
-    <!-- page-wrapper Start-->
-    <div class="page-wrapper compact-wrapper" id="pageWrapper">
-      <!-- Page Header Start-->
-      <div class="page-header">
-        <div class="header-wrapper row m-0">
-          <form class="form-inline search-full col" action="#" method="get">
-            <div class="form-group w-100">
-              <div class="Typeahead Typeahead--twitterUsers">
-                <div class="u-posRelative">
-                  <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search In Enzo .." name="q" title="" autofocus>
-                  <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+  
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <div class="me-3">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+        <div>
+        <a class="navbar-brand brand-logo" href="dashboard.php">
+          <img src="assets/img/upboard.png" class="me-2" height="30"
+        alt="MDB Logo" loading="lazy" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="dashboard.php">
+          <img src="assets/img/upboard.png" class="me-2" height="30"
+        alt="MDB Logo" loading="lazy" />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+        <ul class="navbar-nav">
+          <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+            <h1 class="welcome-text">GGICBALLIA </h1>
+            <!-- <h3 class="welcome-sub-text">Your performance summary this week </h3> -->
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3" >
+                <p class="mb-0 font-weight-medium float-left">Select category</p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Bootstrap Bundle </p>
+                  <p class="fw-light small-text mb-0">This is a Bundle featuring 16 unique dashboards</p>
                 </div>
-                <div class="Typeahead-menu"></div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Angular Bundle</p>
+                  <p class="fw-light small-text mb-0">Everything you’ll ever need for your Angular projects</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">VUE Bundle</p>
+                  <p class="fw-light small-text mb-0">Bundle of 6 Premium Vue Admin Dashboard</p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">React Bundle</p>
+                  <p class="fw-light small-text mb-0">Bundle of 8 Premium React Admin Dashboard</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
+              <span class="input-group-addon input-group-prepend border-right">
+                <span class="icon-calendar input-group-text calendar-icon"></span>
+              </span>
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="nav-item">
+            <form class="search-form" action="#">
+              <i class="icon-search"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here">
+            </form>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+              <i class="icon-mail icon-lg"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item py-3 border-bottom">
+                <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-alert m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Application Error</h6>
+                  <p class="fw-light small-text mb-0"> Just now </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-settings m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">Settings</h6>
+                  <p class="fw-light small-text mb-0"> Private message </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item py-3">
+                <div class="preview-thumbnail">
+                  <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject fw-normal text-dark mb-1">New user registration</h6>
+                  <p class="fw-light small-text mb-0"> 2 days ago </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                <span class="badge badge-pill badge-primary float-right">View all</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                </div>
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <!-- <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+            <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+              <div class="dropdown-header text-center">
+                <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image">
+                <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+                <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
               </div>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
-          </form>
-          <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href="dashboard.php"><img class="img-fluid" src="assets/images/logo/login.png" alt=""></a></div>
-            <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
+          </li> -->
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
           </div>
-          <div class="left-header col horizontal-wrapper ps-0">
-            <div class="input-group">
-              <div class="input-group-prepend"><span class="input-group-text mobile-search"><i class="fa fa-search"></i></span></div>
-              <input class="form-control" type="text" placeholder="Search Here........">
-            </div>
-          </div>
-          <div class="nav-right col-8 pull-right right-header p-0">
-            <ul class="nav-menus">             
-            
-              <li class="profile-nav onhover-dropdown p-0 me-0">
-                <div class="d-flex profile-media"><img class="b-r-50" src="assets/images/dashboard/profile.jpg" alt="">
-                  <div class="flex-grow-1"><span>Emay Walter</span>
-                    <p class="mb-0 font-roboto">Admin <i class="middle fa fa-angle-down"></i></p>
-                  </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
                 </div>
-                <ul class="profile-dropdown onhover-show-div">
-                  <li><a href="index.php"><i data-feather="user"></i><span>Log out </span></a></li>
-                
-                </ul>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 fw-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary me-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
               </li>
             </ul>
           </div>
-          <script class="result-template" type="text/x-handlebars-template">
-            <div class="ProfileCard u-cf">                        
-            <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
-            <div class="ProfileCard-details">
-            <div class="ProfileCard-realName">{{name}}</div>
-            </div>
-            </div>
-          </script>
-          <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
+          <!-- chat tab ends -->
         </div>
       </div>
-      <!-- Page Header Ends                              -->
-      <!-- Page Body Start-->
-      <div class="page-body-wrapper">
-        <!-- Page Sidebar Start-->
-        <div class="sidebar-wrapper">
-          <div>
-            <div class="logo-wrapper"><a href="dashboard.php"><img class="img-fluid for-light" src="assets/img/upboard.png" alt="" style="max-width: 27%;"></a>
-              <div class="back-btn"><i class="fa fa-angle-left"></i></div>
-              <div class="toggle-sidebar"><i class="fa fa-cog status_toggle middle sidebar-toggle"> </i></div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.php">
+              <i class="mdi mdi-grid-large menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">Datas</li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="menu-icon mdi mdi-table"></i>
+              <span class="menu-title">List</span>
+              <i class="menu-arrow"></i>
+            </a> -->
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="list_student.php">Student List</a></li>
+              </ul>
             </div>
-            <div class="logo-icon-wrapper"><a href="dashboard.php"><img class="img-fluid" src="assets/img/upboard.png" alt="" style="max-width: 27%;"></a></div>
-            <nav class="sidebar-main">
-              <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
-              <div id="sidebar-menu">
-                <ul class="sidebar-links" id="simple-bar">
-                  <li class="back-btn"><a href="dashboard.php"><img class="img-fluid" src="assets/images/logo/logo-icon.png" alt=""></a>
-                    <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
-                  </li>
-                  <li class="sidebar-main-title">          
-                    <h6 class="lan-1">General </h6>
-                  </li>
-                  <li class="menu-box"> 
-                    <ul>             
-                    <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="dashboard.php">Dashboard</a>
-                      </li> 
-                      <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="list_student.php">Student Data</a>
-                      </li>
-                      <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="teacher.php">Teacher List</a>
-                      </li> 
-                    </ul>
-                  </li>
-                  
-                </ul>
-              </div>
-              <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
-            </nav>
-          </div>
-        </div>
-        <!-- Page Sidebar Ends-->
-        <div class="page-body">
-          <div class="container-fluid">
-            <div class="page-title">
-              <div class="row">
-                <div class="col-sm-6">
-                  <h5>Student Details</h5>
-                </div>
-                <div class="col-sm-6">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="dashboard.php"><i data-feather="home"></i></a></li>
-                
-                  </ol>
-                </div>
-              </div>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="teacher.php">Teacher table</a></li>
+              </ul>
             </div>
-          </div>
-          <!-- Container-fluid starts-->
-          <div class="container-fluid">
-            <div class="row">
-              <!-- Zero Configuration  Starts-->
-              <div class="col-sm-12">
-                <div class="card">
-                  
-                  <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="display" id="basic-1">
-                        <thead>
-                        <?php echo $deleteMsg??''; ?>
-                          <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>Address</th>
-                            <th>Class</th>
-                            <th>Enroll</th>
-                            <!-- <th>Action</th> -->
-                          </tr>
-                        </thead>
-                        <tbody>
-                        <?php
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Student List</h4>
+                  <!-- <p class="card-description">
+                    Add class <code>.table-striped</code>
+                  </p> -->
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>
+                            ID
+                          </th>
+                          <th>
+                            Name
+                          </th>
+                          <th>
+                            Age
+                          </th>
+                          <th>
+                            Address
+                          </th>
+                          <th>
+                            Class
+                          </th>
+                          <th>
+                            Enroll
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                       <?php
                             if(is_array($fetchData)){      
                             $sn=1;
                             foreach($fetchData as $data){
                             ?>
-                          <tr>
-                            <td><?php echo $sn; ?></td>
-                            <td><?php echo $data['NAME']??''; ?></td>
-                            <td><?php echo $data['AGE']??''; ?></td>
-                            <td><?php echo $data['ADDRESS']??''; ?></td>
-                            <td><?php echo $data['class']??''; ?></td>
-                            <td><?php echo $data['enroll']??''; ?></td>
-                            <!-- <td> 
-                              <ul class="action"> 
-                                <li class="edit"> <a href="#"><i class="icon-pencil-alt"></i></a></li>
-                                <li class="delete"><a href="#"><i class="icon-trash"></i></a></li>
-                              </ul>
-                            </td> -->
-                          </tr>
-                          <?php
+                        <tr>
+                          <td class="py-1">
+                            <?php echo $sn; ?>
+                          </td>
+                          <td>
+                            <?php echo $data['NAME']??''; ?>
+                          </td>
+                          <td>
+                            
+                            <?php echo $data['AGE']??''; ?>
+                            
+                          </td>
+                          <td>
+                          <?php echo $data['ADDRESS']??''; ?>
+                          </td>
+                          <td>
+                          <?php echo $data['class']??''; ?>
+                          </td>
+                          <td>
+                          <?php echo $data['enroll']??''; ?>
+                          </td>
+                            </tr>
+                        <?php
                             $sn++;}}else{ ?>
                             <tr>
                                 <td colspan="8">
                             <?php echo $fetchData; ?>
                             <?php
                              }?>
-                        </tbody>
-                      </table>
-                    </div>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-              <!-- Zero Configuration  Ends-->
-              <!-- Complex headers (rowspan and colspan) Starts-->
-              
-          </div>
-          <!-- Container-fluid Ends-->
-        </div>
-        <!-- footer start-->
-        <footer class="footer">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6 p-0 footer-left">
-                <p class="mb-0">Copyright © 2023 GGICBALLIA. All rights reserved.</p>
-              </div>
-             
             </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"></span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+Copyright © 2022, ggicballia.in . All rights reserved.</span>
           </div>
         </footer>
       </div>
+      
     </div>
-    <!-- latest jquery-->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap js-->
-    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- feather icon js-->
-    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
-    <!-- scrollbar js-->
-    <script src="assets/js/scrollbar/simplebar.js"></script>
-    <script src="assets/js/scrollbar/custom.js"></script>
-    <!-- Sidebar jquery-->
-    <script src="assets/js/config.js"></script>
-    <!-- Plugins JS start-->
-    <script src="assets/js/sidebar-menu.js"></script>
-    <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="assets/js/datatable/datatables/datatable.custom.js"></script>
-    <!-- Plugins JS Ends-->
-    <!-- Theme js-->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/theme-customizer/customizer.js"></script>
-    <!-- login js-->
-    <!-- Plugin used-->
-  </body>
+   
+  </div>
+  <script src="vendors/js/vendor.bundle.base.js"></script>
 
-<!-- Mirrored from admin.pixelstrap.com/enzo/template/datatable-basic-init.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 May 2023 21:04:47 GMT -->
+  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+ 
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+
+</body>
+
 </html>

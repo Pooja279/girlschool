@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+ 
   <title>ggicballia</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -39,6 +39,23 @@
 
 <body>
 
+
+<?php 
+    if(isset($_POST['submit'])){
+        $to = "nehapnchal2606@gmail.com"; // this is your Email address
+        $from = $_POST['email']; // this is the sender's Email address
+        $name = $_POST['name'];
+        $subject = $_POST['subject'];
+        $message = $name . " " . " wrote the following:" . "\n\n" . $_POST['message'];
+
+        $headers = "From:" . $from;
+        $headers2 = "From:" . $to;
+        mail($to,$subject,$message,$headers, $headers2 );
+        echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+        // You can also use header('Location: thank_you.php'); to redirect to another page.
+        }
+    ?>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -51,6 +68,7 @@
     </a>
   </div>
 </nav>
+
       <h1 class="logo me-auto"><a href="index.php"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.php" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -138,7 +156,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -174,8 +192,6 @@
 <?php
 include "footer.php";
 ?>
-
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -187,6 +203,15 @@ include "footer.php";
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+
+    if(
+      window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+  </script>
 
 </body>
 
