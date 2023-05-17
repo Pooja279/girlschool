@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>ggicballia </title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/feather/feather.css">
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
@@ -21,7 +21,8 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="images/favicon.png" />
+  <link href="assets/img/upboard.png" rel="icon">
+
 </head>
 <body>
   <div class="container-scroller">
@@ -29,10 +30,10 @@
       <div class="col-md-12 p-0 m-0">
         <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
           <div class="ps-lg-1">
-            <div class="d-flex align-items-center justify-content-between">
+            <!-- <div class="d-flex align-items-center justify-content-between">
               <p class="mb-0 font-weight-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
               <a href="https://www.bootstrapdash.com/product/star-admin-pro/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo" target="_blank" class="btn me-2 buy-now-btn border-0">Get Pro</a>
-            </div>
+            </div> -->
           </div>
           <div class="d-flex align-items-center justify-content-between">
             <a href="https://www.bootstrapdash.com/product/star-admin-pro/"><i class="mdi mdi-home me-3 text-white"></i></a>
@@ -52,18 +53,20 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="index.html">
-            <img src="images/logo.svg" alt="logo" />
+          <a class="navbar-brand brand-logo" href="dashboard.php">
+          <img src="assets/img/upboard.png" class="me-2" height="30"
+        alt="MDB Logo" loading="lazy" />
           </a>
-          <a class="navbar-brand brand-logo-mini" href="index.html">
-            <img src="images/logo-mini.svg" alt="logo" />
+          <a class="navbar-brand brand-logo-mini" href="dashboard.php">
+          <img src="assets/img/upboard.png" class="me-2" height="30"
+        alt="MDB Logo" loading="lazy" />
           </a>
         </div>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
+            <h1 class="welcome-text">GGICBALLIA</h1>
             <h3 class="welcome-sub-text">Your performance summary this week </h3>
           </li>
         </ul>
@@ -193,7 +196,7 @@
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+          <!-- <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
@@ -208,7 +211,7 @@
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
-          </li>
+          </li> -->
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
@@ -391,7 +394,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="dashboard.php">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -403,12 +406,12 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
+              <span class="menu-title">List</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="list_student.php">Student table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="list_student.php">Student List</a></li>
               </ul>
             </div>
             <div class="collapse" id="tables">
@@ -430,7 +433,7 @@
                     <li class="nav-item">
                       <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                       <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false">Audiences</a>
                     </li>
                     <li class="nav-item">
@@ -438,7 +441,7 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link border-0" id="more-tab" data-bs-toggle="tab" href="#more" role="tab" aria-selected="false">More</a>
-                    </li>
+                    </li> -->
                   </ul>
                   <div>
                     <div class="btn-wrapper">
@@ -454,12 +457,12 @@
                       <div class="col-sm-12">
                         <div class="statistics-details d-flex align-items-center justify-content-between">
                           <div>
-                            <p class="statistics-title">Bounce Rate</p>
+                            <p class="statistics-title">Rate</p>
                             <h3 class="rate-percentage">32.53%</h3>
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>-0.5%</span></p>
                           </div>
                           <div>
-                            <p class="statistics-title">Page Views</p>
+                            <p class="statistics-title">Lectures</p>
                             <h3 class="rate-percentage">7,682</h3>
                             <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
                           </div>
@@ -469,7 +472,7 @@
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
                           <div class="d-none d-md-block">
-                            <p class="statistics-title">Avg. Time on Site</p>
+                            <p class="statistics-title">Avg. Time in School</p>
                             <h3 class="rate-percentage">2m:35s</h3>
                             <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
                           </div>
@@ -479,7 +482,7 @@
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
                           <div class="d-none d-md-block">
-                            <p class="statistics-title">Avg. Time on Site</p>
+                            <p class="statistics-title">Avg. Time in School</p>
                             <h3 class="rate-percentage">2m:35s</h3>
                             <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
                           </div>
@@ -494,8 +497,8 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Market Overview</h4>
-                                   <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    <h4 class="card-title card-title-dash">School Overview</h4>
+                                   <!-- <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p> -->
                                   </div>
                                   <div>
                                     <div class="dropdown">
@@ -512,7 +515,7 @@
                                   </div>
                                 </div>
                                 <div class="d-sm-flex align-items-center mt-1 justify-content-between">
-                                  <div class="d-sm-flex align-items-center mt-4 justify-content-between"><h2 class="me-2 fw-bold">$36,2531.00</h2><h4 class="me-2">USD</h4><h4 class="text-success">(+1.37%)</h4></div>
+                                  <!-- <div class="d-sm-flex align-items-center mt-4 justify-content-between"><h2 class="me-2 fw-bold">$36,2531.00</h2><h4 class="me-2">USD</h4><h4 class="text-success">(+1.37%)</h4></div> -->
                                   <div class="me-3"><div id="marketing-overview-legend"></div></div>
                                 </div>
                                 <div class="chartjs-bar-wrapper mt-3">
@@ -522,7 +525,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row flex-grow">
+                        <!-- <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
@@ -723,7 +726,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                         <div class="row flex-grow">
                           <div class="col-md-6 col-lg-6 grid-margin stretch-card">
                             <div class="card card-rounded">
@@ -732,12 +735,12 @@
                                 <div class="list align-items-center border-bottom py-2">
                                   <div class="wrapper w-100">
                                     <p class="mb-2 font-weight-medium">
-                                      Change in Directors
+                                      Azadi ka Amrit Mahotsav
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                       <div class="d-flex align-items-center">
                                         <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        <p class="mb-0 text-small text-muted">August 15, 2022</p>
                                       </div>
                                     </div>
                                   </div>
@@ -745,12 +748,12 @@
                                 <div class="list align-items-center border-bottom py-2">
                                   <div class="wrapper w-100">
                                     <p class="mb-2 font-weight-medium">
-                                      Other Events
+                                      International Day of Yoga
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                       <div class="d-flex align-items-center">
                                         <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        <p class="mb-0 text-small text-muted">June 21, 2022</p>
                                       </div>
                                     </div>
                                   </div>
@@ -758,12 +761,12 @@
                                 <div class="list align-items-center border-bottom py-2">
                                   <div class="wrapper w-100">
                                     <p class="mb-2 font-weight-medium">
-                                      Quarterly Report
+                                    World Population Day
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                       <div class="d-flex align-items-center">
                                         <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        <p class="mb-0 text-small text-muted">July 11, 2022</p>
                                       </div>
                                     </div>
                                   </div>
@@ -771,12 +774,12 @@
                                 <div class="list align-items-center border-bottom py-2">
                                   <div class="wrapper w-100">
                                     <p class="mb-2 font-weight-medium">
-                                      Change in Directors
+                                    Awareness Campaign
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                       <div class="d-flex align-items-center">
                                         <i class="mdi mdi-calendar text-muted me-1"></i>
-                                        <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                                        <p class="mb-0 text-small text-muted">September 14, 2022</p>
                                       </div>
                                     </div>
                                   </div>
@@ -797,7 +800,6 @@
                               <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-between mb-3">
                                   <h4 class="card-title card-title-dash">Activities</h4>
-                                  <p class="mb-0">20 finished, 5 remaining</p>
                                 </div>
                                 <ul class="bullet-line-list">
                                   <li>
@@ -856,7 +858,7 @@
                         </div>
                       </div>
                       <div class="col-lg-4 d-flex flex-column">
-                        <div class="row flex-grow">
+                        <!-- <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
@@ -865,7 +867,7 @@
                                     <div class="d-flex justify-content-between align-items-center">
                                       <h4 class="card-title card-title-dash">Todo list</h4>
                                       <div class="add-items d-flex mb-0">
-                                        <!-- <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?"> -->
+                                        <input type="text" class="form-control todo-list-input" placeholder="What do you need to do today?">
                                         <button class="add btn btn-icons btn-rounded btn-primary todo-list-add-btn text-white me-0 pl-12p"><i class="mdi mdi-plus"></i></button>
                                       </div>
                                     </div>
@@ -923,8 +925,8 @@
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="row flex-grow">
+                        </div> -->
+                        <!-- <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
@@ -940,7 +942,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                         <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
@@ -987,60 +989,50 @@
                                           <img class="img-sm rounded-10" src="images/faces/face1.jpg" alt="profile">
                                           <div class="wrapper ms-3">
                                             <p class="ms-1 mb-1 fw-bold">Brandon Washington</p>
-                                            <small class="text-muted mb-0">162543</small>
+                                            <small class="text-muted mb-0">99%</small>
                                           </div>
                                         </div>
-                                        <div class="text-muted text-small">
-                                          1h ago
-                                        </div>
+                                       
                                       </div>
                                       <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
                                         <div class="d-flex">
                                           <img class="img-sm rounded-10" src="images/faces/face2.jpg" alt="profile">
                                           <div class="wrapper ms-3">
                                             <p class="ms-1 mb-1 fw-bold">Wayne Murphy</p>
-                                            <small class="text-muted mb-0">162543</small>
+                                            <small class="text-muted mb-0">96%</small>
                                           </div>
                                         </div>
-                                        <div class="text-muted text-small">
-                                          1h ago
-                                        </div>
+                                        
                                       </div>
                                       <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
                                         <div class="d-flex">
                                           <img class="img-sm rounded-10" src="images/faces/face3.jpg" alt="profile">
                                           <div class="wrapper ms-3">
                                             <p class="ms-1 mb-1 fw-bold">Katherine Butler</p>
-                                            <small class="text-muted mb-0">162543</small>
+                                            <small class="text-muted mb-0">90%</small>
                                           </div>
                                         </div>
-                                        <div class="text-muted text-small">
-                                          1h ago
-                                        </div>
+                                        
                                       </div>
                                       <div class="wrapper d-flex align-items-center justify-content-between py-2 border-bottom">
                                         <div class="d-flex">
                                           <img class="img-sm rounded-10" src="images/faces/face4.jpg" alt="profile">
                                           <div class="wrapper ms-3">
                                             <p class="ms-1 mb-1 fw-bold">Matthew Bailey</p>
-                                            <small class="text-muted mb-0">162543</small>
+                                            <small class="text-muted mb-0">80%</small>
                                           </div>
                                         </div>
-                                        <div class="text-muted text-small">
-                                          1h ago
-                                        </div>
+                                       
                                       </div>
                                       <div class="wrapper d-flex align-items-center justify-content-between pt-2">
                                         <div class="d-flex">
                                           <img class="img-sm rounded-10" src="images/faces/face5.jpg" alt="profile">
                                           <div class="wrapper ms-3">
                                             <p class="ms-1 mb-1 fw-bold">Rafell John</p>
-                                            <small class="text-muted mb-0">Alaska, USA</small>
+                                            <small class="text-muted mb-0">89%</small>
                                           </div>
                                         </div>
-                                        <div class="text-muted text-small">
-                                          1h ago
-                                        </div>
+                                       
                                       </div>
                                     </div>
                                   </div>
