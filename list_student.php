@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>ggicballia </title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/feather/feather.css">
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
@@ -21,7 +21,8 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="images/favicon.png" />
+  <link href="assets/img/upboard.png" rel="icon">
+
 </head>
 <body>
 <?php
@@ -65,19 +66,21 @@ return $msg;
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="index.html">
-            <img src="images/logo.svg" alt="logo" />
+        <a class="navbar-brand brand-logo" href="dashboard.php">
+          <img src="assets/img/upboard.png" class="me-2" height="30"
+        alt="MDB Logo" loading="lazy" />
           </a>
-          <a class="navbar-brand brand-logo-mini" href="index.html">
-            <img src="images/logo-mini.svg" alt="logo" />
+          <a class="navbar-brand brand-logo-mini" href="dashboard.php">
+          <img src="assets/img/upboard.png" class="me-2" height="30"
+        alt="MDB Logo" loading="lazy" />
           </a>
         </div>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
-            <h3 class="welcome-sub-text">Your performance summary this week </h3>
+            <h1 class="welcome-text">GGICBALLIA </h1>
+            <!-- <h3 class="welcome-sub-text">Your performance summary this week </h3> -->
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -206,7 +209,7 @@ return $msg;
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+          <!-- <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
@@ -221,7 +224,7 @@ return $msg;
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
-          </li>
+          </li> -->
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
@@ -404,21 +407,21 @@ return $msg;
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="dashboard.php">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item nav-category">Datas</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+            <!-- <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
+              <span class="menu-title">List</span>
               <i class="menu-arrow"></i>
-            </a>
+            </a> -->
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="list_student.php">Student table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="list_student.php">Student List</a></li>
               </ul>
             </div>
             <div class="collapse" id="tables">
@@ -436,10 +439,10 @@ return $msg;
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Striped Table</h4>
-                  <p class="card-description">
+                  <h4 class="card-title">Student List</h4>
+                  <!-- <p class="card-description">
                     Add class <code>.table-striped</code>
-                  </p>
+                  </p> -->
                   <div class="table-responsive">
                     <table class="table table-striped">
                       <thead>
@@ -528,6 +531,8 @@ Copyright © 2022, ggicballia.in . All rights reserved.</span>
   <script src="js/template.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/todolist.js"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+
 </body>
 
 </html>
