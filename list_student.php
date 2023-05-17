@@ -472,9 +472,9 @@ return $msg;
                             foreach($fetchData as $data){
                             ?>
                         <tr>
-                          <td class="py-1">
+                          <!-- <td class="py-1">
                             <?php echo $sn; ?>
-                          </td>
+                          </td> -->
                           <td>
                             <?php echo $data['name']??''; ?>
                           </td>
@@ -485,12 +485,12 @@ return $msg;
                           </td>
                           <td>
                             
-                            <?php echo $data['email']??''; ?>
+                            <?php echo $data['class']??''; ?>
                             
                           </td>
                           
                           <td>
-                          <?php echo $data['class']??''; ?>
+                          <?php echo $data['email']??''; ?>
                           </td>
                           <td>
                           <?php echo $data['enroll']??''; ?>
